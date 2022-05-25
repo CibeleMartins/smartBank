@@ -1,14 +1,16 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter } from "react-router-dom";
+import Rotas from './routes/index';
+import Header from './components/Header/Header'
 
-import Cabecalho from "./Components/Cabecalho";
-import Container from "./Components/Container";
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Cabecalho />
-      <Container />
-    </>
+    <BrowserRouter>
+    <Header/>
+      <Rotas />
+    </BrowserRouter>
   );
 }
 
