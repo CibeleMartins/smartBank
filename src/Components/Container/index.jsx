@@ -3,14 +3,13 @@ import styled from 'styled-components';
 
 import Title from "../Title/Title";
 import Conta from "../Conta";
+import { primaryColor } from "../UI/variables";
 
 
 const Container = styled.div `
-
-  background-color: #f1f1f1;
+  background-color: ${primaryColor};
   min-height: 90vh;
   padding: 0px 15vw;
-
 `;
 
 const Contents = styled.section `
@@ -18,7 +17,7 @@ const Contents = styled.section `
   flex-direction: row;
   justify-content: space-between;
   
-@media (max-width: 800px) {
+  @media (max-width: 800px) {
   
   flex-direction: column;
   

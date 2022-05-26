@@ -8,7 +8,7 @@ import {createGlobalStyle} from 'styled-components';
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: grey;
+  background-color: black;
 }
 `;
 

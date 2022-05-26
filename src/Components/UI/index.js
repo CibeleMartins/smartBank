@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Icone = styled.img `
 
   height: 25px;
-  width: 25px;
+  width: 20px;
 
 `;
 
@@ -18,6 +18,8 @@ export const Box = styled.div `
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
   width: 48%;
+  background-color: #0000;
+  border: 1px solid #daa520;
 
   @media (max-width: 800px) {
 
@@ -27,13 +29,11 @@ export const Box = styled.div `
 `;
 
 
-
-
 export const Button = styled.button `
   margin: 15px auto 0px auto;
   display: block;
   border-radius: 20px;
-  background-color: #41d3be;
+  background-color: black;
   border: none;
   color: white;
   font-weight: 600;
@@ -44,12 +44,34 @@ export const Button = styled.button `
 
 
 export const Detail = styled.span `
-  color: #41d3be;
+  color: grey;
   font-size: 24px;
+  width: 50px;
 
 `;
 
 export const Balance = styled.div `
   font-weight: 700;
   font-size: 32px;
-`
+`;
+
+export const BoxTwo = styled.div `
+height: auto;
+width: 200px;
+background-color: black;
+color: grey;
+font-size: "26px"; 
+padding: "20px 0";
+display: flex;
+align-items: center;
+`;
+
+export const BoxThree = styled.div `
+height: auto;
+width: 200px;
+background-color: black;
+color: grey;
+font-size: "26px"; 
+padding: "20px 0";
+display: flex;
+`;
