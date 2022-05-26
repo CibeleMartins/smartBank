@@ -20,10 +20,10 @@ export default function ItemRender({type, from, value}) {
       <span className='text'>
         {type}
       </span>
-      <span>
+      <span className='text'>
         {from}
       </span>
-      <span>
+      <span className='text'>
         {value}
       </span>
     </Item>

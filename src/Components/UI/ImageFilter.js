@@ -10,7 +10,7 @@ import { Icone } from '../UI/index';
 
 const ExtractIcon = styled(Icone)`
 
-  background-color: grey;
+  background-color: ${({theme})=> theme.body};
   border-radius: 2px;
   width: 25px;
 

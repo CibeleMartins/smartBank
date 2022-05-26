@@ -15,16 +15,14 @@ const Items = styled.div `
   padding: 10px;
   font-size: 12px;
   box-sizing: border-box;
- 
-
 
   .text {
-    color: grey;
+    color:${({theme})=> theme.inside};
     font-weight: lighter;
 
   }
 
-`
+`;
 
 export default function render(props) {
   return (
