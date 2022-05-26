@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Title from "../Title/Title";
 import Conta from "../Conta";
+import Extract from '../Extract/Extract'
 import { primaryColor } from "../UI/variables";
 
 
@@ -25,13 +26,14 @@ const Contents = styled.section `
 
 `
 
-export default ()=> {
+export default function render  () {
 
   return (
     <Container>
       <Title>Olá!</Title>
       <Contents>
         <Conta/>
+        <Extract/>
       </Contents>
     </Container>
   )

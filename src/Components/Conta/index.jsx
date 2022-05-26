@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
-
-import privado from "../../assets/images/privado.svg";
-import olho_icone from "../../assets/images/olho.svg";
 import dinheiro from "../../assets/images/dinheiro.png";
 
 import {Icone, Box, Button, Detail, Balance, BoxTwo, BoxThree} from '../UI/index'
@@ -45,7 +42,7 @@ const Conta = () => {
 
       <Button onClick={toggleHandler}>
         <IconeImg
-          src={toggleState ? privado : olho_icone}
+          src={toggleState ? '' : ''}
           alt="Privacidade do Saldo"
         />
       </Button>
