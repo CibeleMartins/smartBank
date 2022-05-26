@@ -8,7 +8,7 @@ import { primaryColor } from "../UI/variables";
 
 
 const Container = styled.div `
-  background-color: ${primaryColor};
+  background-color: ${({theme})=> theme.body};
   min-height: 90vh;
   padding: 0px 15vw;
 `;
@@ -17,6 +17,7 @@ const Contents = styled.section `
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: ${({theme})=> theme.body};
   
   @media (max-width: 800px) {
   

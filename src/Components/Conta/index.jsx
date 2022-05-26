@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
 import dinheiro from "../../assets/images/dinheiro.png";
+import visibilityOn from "../../assets/images/visibilityOn.png";
+import visibilityOff from "../../assets/images/visibilityOff.png";
 
-import {Icone, Box, Button, Detail, Balance, BoxTwo, BoxThree} from '../UI/index'
+import {Icone, Box, Button, Detail, Balance, BoxTwo, BoxThree, Paragraph} from '../UI/index'
 import Title from '../Title/Title'
 
 
 const IconeImg = styled(Icone)`
   margin-top: 2px;
-  background-color: black;
+  background-color:white;
+  border-radius: 30px;
+  width: 25px;
 `;
 
 const IconeDist= styled(Icone) `
-    margin-left: 40px;
+    margin-right: 30px;
 `;
 
 const Conta = () => {
@@ -24,26 +28,25 @@ const Conta = () => {
 
   return (
     <Box>
-      <Title>Conta</Title>
+      <Title>CONTA</Title>
       <BoxTwo>
-        <p>Saldo Disponível</p>
         <Detail>
           <IconeDist src={dinheiro} alt="Ícone Saldo" />
         </Detail>
+        <Paragraph>SALDO</Paragraph>
       </BoxTwo>
 
       <BoxThree>
         {toggleState ? (
           <Balance>
-            <Detail>R$</Detail>  0,00
+            <Detail>R$</Detail><Paragraph>0,00</Paragraph>
           </Balance>
         ) : null}
       </BoxThree>
 
       <Button onClick={toggleHandler}>
         <IconeImg
-          src={toggleState ? '' : ''}
-          alt="Privacidade do Saldo"
+          src={toggleState ? visibilityOff : visibilityOn}
         />
       </Button>
     </Box>

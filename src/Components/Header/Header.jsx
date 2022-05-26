@@ -29,7 +29,7 @@ const StyledHeader = styled.nav `
 `;
 
 const Logo = styled.img `
-  height: 90px;
+  height: 40px;
   width: 100px;
   margin-left: 30px;
 `;
